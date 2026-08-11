@@ -1,0 +1,22 @@
+# Environments
+.venv/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+
+# Runtime data (never commit user uploads or the vector database)
+uploaded_pdfs/
+chroma_db/
+
+# --- Excluding frontend + backend web layer for now ---
+# Only the AI/RAG core (app/services/, app/config.py) is being
+# pushed at this stage, to test it independently of the web app.
+app/templates/
+app/static/
+app/api/
+app/main.py
+
+# Misc
+debug_check.py
